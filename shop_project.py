@@ -197,7 +197,7 @@ class StockClass(object):
         for method in conversion_formats:
             try:
                 setattr(self.stock_dict[name], parameter, method(new_value))
-                print("You've set {} of {} to {}".format(parameter, parameter,
+                print("You've set {} of {} to {}.".format(parameter, name,
                                                          new_value))
                 return
             except ValueError:
